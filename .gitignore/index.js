@@ -17,7 +17,7 @@ client.on('message', message => {
     }
     
     if(message.content === prefix + "dim"){
-        message.channel.sendMessages("Dimitry est le plus beau mais le plus nul à rocket league");
+        message.channel.send("Dimitry est le plus beau mais le plus nul à rocket league");
     }
     
 });
