@@ -8,4 +8,4 @@ client.on("ready", function () {
     console.log("Mon BOT est Connecté");
 })
 
-client.login("NzIxNDc3OTE5NDg1OTg0Nzg5.XuVPWA.g6F6WteQRbh9jOFlLzB3I8A_ZDA");
+client.login(process.env.TOKEN);
