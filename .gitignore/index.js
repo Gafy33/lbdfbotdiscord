@@ -17,12 +17,12 @@ client.on('message', message => {
     }
     
     if(message.content === prefix + "image"){
-        get('http://lorempixel.com/1920/1080').then(res => {
+        get('https://aws.random.cat/meow').then(res => {
             const embed = new Discord.RichEmbed()
-            .setDescription(`Image :`)
+            .setDescription(`Une image pour toi ${message.author.username} :`)
             .setImage(res.body.file)
             .setColor("0x201F1F")
-            return message.channel.send({embed});
+            message.channel.send({embed});
     }
     
     
