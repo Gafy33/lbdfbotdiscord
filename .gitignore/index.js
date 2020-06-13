@@ -11,7 +11,7 @@ client.on("ready", function () {
 
 client.login(process.env.TOKEN);
 
-client.on('message', message => (
+client.on('message', message => {
     if(message.content === prefix + "help"){
         message.channel.sendMessage("Commandes : \n $dim");
     }
