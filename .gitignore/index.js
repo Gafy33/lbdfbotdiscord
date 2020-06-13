@@ -13,7 +13,7 @@ client.login(process.env.TOKEN);
 
 client.on('message', message => {
     if(message.content === prefix + "help"){
-        message.reply("Commandes : \n $dim");
+        message.channe("Commandes : \n $dim");
     }
     
     if(message.content === prefix + "dim"){
