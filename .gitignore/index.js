@@ -17,7 +17,7 @@ client.on('message', message => {
     }
     
     if(message.content === prefix + "image"){
-        get('https://aws.random.cat/meow').then(res => {
+        get('http://lorempixel.com/400/200').then(res => {
             const embed = new Discord.RichEmbed()
             .setDescription(`Une image pour toi :`)
             .setImage(res.body.file)
