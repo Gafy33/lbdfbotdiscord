@@ -19,10 +19,10 @@ client.on('message', message => {
     if(message.content === prefix + "image"){
         get('https://aws.random.cat/meow').then(res => {
             const embed = new Discord.RichEmbed()
-            .setDescription(`Une image pour toi ${message.author.username} :`)
+            .setDescription(`Une image pour toi :`)
             .setImage(res.body.file)
             .setColor("0x201F1F")
-            message.channel.send({embed});
+            return message.channel.send({embed});
     }
     
     
