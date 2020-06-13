@@ -16,8 +16,15 @@ client.on('message', message => {
         message.channel.send("Commandes : \n lbdf dim");
     }
     
-    if(message.content === prefix + "dim"){
-        message.channel.send("Dimitry est le plus beau mais le plus nul à rocket league");
+    if(message.content === prefix + "image"){
+        get('http://lorempixel.com/1920/1080').then(res => {
+            const embed = new Discord.RichEmbed()
+            .setDescription(`Image :`)
+            .setImage(res.body.file)
+            .setColor("0x201F1F")
+            return message.channel.send({embed});
     }
+    
+    
     
 });
