@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const get = require('snekfetch')
+const get = require('snekfetch');
 
 var prefix = ("lbdf ");
 
