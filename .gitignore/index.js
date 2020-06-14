@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const get = require('snekfetch');
 
 var prefix = ("lbdf ");
 
@@ -15,18 +14,9 @@ client.login(process.env.TOKEN);
 
 client.on('message', message => {
     if(message.content === prefix + "help"){
-        message.channel.send("Commandes : \n lbdf dim");
+        message.channel.send("Commandes : \n ");
     }
     
-    if(message.content === prefix + "image"){
-        get('http://lorempixel.com/400/200').then(res => {
-            const embed = new Discord.RichEmbed()
-            .setDescription(`Voila ton image`)
-            .setImage(res.body.file)
-            .setColor("0x201F1F")
-            message.channel.send({embed});
-        });
-    }
     
     
     
