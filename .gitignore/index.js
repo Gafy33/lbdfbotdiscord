@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+
+const 
 var prefix = ("lbdf ");
 
 
@@ -18,11 +20,10 @@ client.on('message', message => {
     
     if(message.content === prefix + "image"){
         get('http://lorempixel.com/400/200').then(res => {
-            const embed = new Discord.RichEmbed()
-            .setDescription(`Une image pour toi :`)
-            .setImage(res.body.file)
-            .setColor("0x201F1F")
-            return message.channel.send({embed});
+        const cEmbed = new Discord.richEmbed()
+        .setImage(res.body.file)
+        message.channel.send({cEmebed})
+        }                                
     }
     
     
