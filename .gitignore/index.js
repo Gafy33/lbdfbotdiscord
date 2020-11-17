@@ -14,7 +14,11 @@ client.login(process.env.TOKEN);
 
 client.on('message', message => {
     if(message.content === prefix + "help"){
-        message.channel.send("Commandes : \n ");
+        message.channel.send("Commandes : \n lbdf tristan");
+    }
+    
+    if(message.content === prefix + "tristan"){
+        message.channel.send("tristan c'est le plus beau de tous les gens présent sur cette terre \n ");
     }
     
     
