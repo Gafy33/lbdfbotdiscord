@@ -10,17 +10,13 @@ client.on("ready", function () {
     console.log("Mon BOT est Connecté");
 })
 
-client.login(process.env.TOKEN);
+client.login(TOKEN);
 
 client.on('message', message => {
-    if(message.content === prefix + "help"){
-        message.channel.send("Commandes : \n lbdf tristan");
-    }
-    
-    if(message.content === prefix + "tristan"){
-        message.channel.send("tristan c'est le plus beau de tous les gens présent sur cette terre \n ");
-    }
-    
+    if (String.prototype.startsWith('!abc')) {
+    str.substr(5);
+    console.log('(1): ' + str.substr(1));  
+    message.channel.sendMessage(str);
     
     
     
