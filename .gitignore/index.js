@@ -10,7 +10,7 @@ client.on("ready", function () {
     console.log("Mon BOT est Connecté");
 })
 
-client.login(TOKEN);
+client.login(process.env.TOKEN);
 
 client.on('message', message => {
     if (String.prototype.startsWith('!abc')) {
