@@ -16,7 +16,7 @@ client.on('message', message => {
 
     if (message.content.startsWith(uneCommande)) {
     var str = message.content.substring(uneCommande.length)
-    message.channel.sendMessage(str)
+    message.channel.send(str)
     }
     
     
