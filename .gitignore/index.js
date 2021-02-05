@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 var prefix = ("lbdf ");
-var uneCommande = '!abc ';
+var uneCommande = '!poids ';
 
 //Toutes les actions à faire quand le bot se connecte
 client.on("ready", function () {
@@ -15,8 +15,7 @@ client.login(process.env.TOKEN);
 client.on('message', message => {
 
     if (message.content.startsWith(uneCommande)) {
-    var str = message.content.substring(uneCommande.length)
-    message.channel.send(str)
+    var str = message.content.substring(uneCommande.length);
                var longueur = str.length;
                var i;
                var poids = 0;
@@ -44,7 +43,8 @@ client.on('message', message => {
                 } 
 
               }
-        message.channel.send(poids);
+        message.channel.send("Ta phrase pèse :");
+        message.channel.send(poids + "kg");
     
     }
     
