@@ -1,5 +1,5 @@
-var Discord = require('discord.js');
-var client = new Discord.Client();
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
 var prefix = ("lbdf ");
 var uneCommande = '!abc ';
@@ -18,7 +18,6 @@ client.on('message', message => {
     var str = message.content.substring(uneCommande.length)
     message.channel.sendMessage(str)
     }
-    });
     
     
     
