@@ -1,8 +1,8 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
+var Discord = require('discord.js');
+var client = new Discord.Client();
 
 var prefix = ("lbdf ");
-const uneCommande = '!abc ';
+var uneCommande = '!abc ';
 
 //Toutes les actions à faire quand le bot se connecte
 client.on("ready", function () {
@@ -13,16 +13,9 @@ client.on("ready", function () {
 client.login(process.env.TOKEN);
 
 client.on('message', message => {
-    if(message.content === prefix + "help"){
-        message.channel.send("Commandes : \n lbdf tristan");
-    }
-    
-    if(message.content === prefix + "tristan"){
-        message.channel.send("tristan c'est le plus beau de tous les gens présent sur cette terre \n ");
-    }
 
     if (message.content.startsWith(uneCommande)) {
-    const str = message.content.substring(uneCommande.length)
+    var str = message.content.substring(uneCommande.length)
     message.channel.sendMessage(str)
     }
     });
