@@ -64,7 +64,7 @@ client.on('message', message => {
 
                 if(lettre == "A")
                 {
-                    message.channel.send("__AAA__\n_AA_AA_\nAA___AA\nAAAAAAA\nAA___AA\n");
+                    message.channel.send("##AAA##\n#AA#AA#\nAA###AA\nAAAAAAA\nAA###AA\n");
                 }
 
               }
