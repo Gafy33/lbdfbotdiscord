@@ -43,6 +43,9 @@ client.on('message', message => {
                 } 
 
               }
+        if(poids > 999){
+            message.channel.send("Au putain, Elle est grosse celle la !");
+        }
         message.channel.send("Ta phrase pèse :");
         message.channel.send(poids + " kg");
     
