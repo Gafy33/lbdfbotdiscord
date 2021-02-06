@@ -3,6 +3,7 @@ const client = new Discord.Client();
 
 var prefix = ("lbdf ");
 var uneCommande = '!poids ';
+var uneCommande2 = '!ascii ';
 
 //Toutes les actions à faire quand le bot se connecte
 client.on("ready", function () {
@@ -51,5 +52,22 @@ client.on('message', message => {
     
     }
     
+    if (message.content.startsWith(uneCommande)) {
+    var str = message.content.substring(uneCommande.length);
+               var longueur = str.length;
+               var i;
+
+              for(i = 0; i < longueur; i++)
+              {
+                var index = i;
+                var lettre = str.charAt(index);
+
+                if(lettre == "A")
+                {
+                    message.channel.send("  AAA  \n AA AA \nAA   AA\nAAAAAAA\nAA   AA\n");
+                }
+
+              }
     
+    }
 });
