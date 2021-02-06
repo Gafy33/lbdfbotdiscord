@@ -44,7 +44,7 @@ client.on('message', message => {
 
               }
         message.channel.send("Ta phrase pèse :");
-        message.channel.send(poids + "kg");
+        message.channel.send(poids + " kg");
     
     }
     
