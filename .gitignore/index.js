@@ -52,8 +52,8 @@ client.on('message', message => {
     
     }
     
-    if (message.content.startsWith(uneCommande)) {
-    var str = message.content.substring(uneCommande.length);
+    if (message.content.startsWith(uneCommande2)) {
+    var str = message.content.substring(uneCommande2.length);
                var longueur = str.length;
                var i;
 
