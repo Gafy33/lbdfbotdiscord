@@ -35,7 +35,7 @@ client.on('message', message => {
                     poids = poids + 3;
                 } else if( lettre == "f" ||lettre == "k" || lettre == "p" || lettre == "t" || lettre == "z" )
                 {
-                    poids = poids + 2
+                    poids = poids + 2;
                 } else if( lettre == "c" ||lettre == "h" || lettre == "m" || lettre == "r" || lettre == "w" )
                 {
                     poids = poids + ( i - 1 );
@@ -50,7 +50,7 @@ client.on('message', message => {
                     poids = poids + 3;
                 } else if( lettre == "F" ||lettre == "K" || lettre == "P" || lettre == "T" || lettre == "Z" )
                 {
-                    poids = poids + 2
+                    poids = poids + 2;
                 } else if( lettre == "C" ||lettre == "H" || lettre == "M" || lettre == "R" || lettre == "W )
                 {
                     poids = poids + ( i - 1 );
