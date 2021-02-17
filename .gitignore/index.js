@@ -42,7 +42,22 @@ client.on('message', message => {
                 } else if( lettre == "d" ||lettre == "j" || lettre == "n" || lettre == "s" || lettre == "x" )
                 {
                     poids = poids -1 ;
-                } 
+                } else if(lettre == "A" ||lettre == "E" || lettre == "I" || lettre == "O" || lettre == "U" || lettre == "Y")
+                {
+                    poids = poids + 1;
+                } else if( lettre == "B" ||lettre == "G" || lettre == "L" || lettre == "Q" || lettre == "V" )
+                {
+                    poids = poids + 3;
+                } else if( lettre == "F" ||lettre == "K" || lettre == "P" || lettre == "T" || lettre == "Z" )
+                {
+                    poids = poids + 2
+                } else if( lettre == "C" ||lettre == "H" || lettre == "M" || lettre == "R" || lettre == "W )
+                {
+                    poids = poids + ( i - 1 );
+                } else if( lettre == "D" ||lettre == "J" || lettre == "N" || lettre == "S" || lettre == "X" )
+                {
+                    poids = poids -1 ;
+                }
 
               }
         if(poids > 999){
